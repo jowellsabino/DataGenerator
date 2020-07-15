@@ -2,6 +2,7 @@
 select os.name
      , os.description
      , org.org_name
+;     , ORG_TYPE=cvorgtype.display
      , org.*
 ;     , ospr.*
 from org_set os
@@ -19,6 +20,10 @@ from org_set os
 ;            on ospr.org_set_id = os.org_set_id
 ;           and ospr.active_ind = 1
 ;           and ospr.end_effective_dt_tm > sysdate)
+;, (inner join code_value cvorgtype
+;           on cvorgtype.code_value = ospr.org_set_type_cd
+;          and cvorgtype.active_ind = 1
+;          and cvorgtype.code_set = 28881)
 where os.name = 'ALL ORGS'
 ;  and ospr.prsnl_id = 8531805.00
 order by os.name,os.description, org.org_name
