@@ -19,7 +19,8 @@ where org.active_ind = 1
   and org.end_effective_dt_tm > sysdate 
   /* alias pools we are interested in */
   and cvaliaspool.display_key in ( 'CHBEPDS'
-                                  ,'CHBBADGENUMBER')
+                                  ,'CHBBADGENUMBER'
+                                  ,'CHBSURESCRIPTS')
   /* Org associated with the alias pool - comment out to get all orgs associated */
   ;and org.org_name_key = 'BOSTONCHILDRENSHOSPITAL*'
 order by 
@@ -27,3 +28,5 @@ order by
       , org.org_name
       , cvaliasentity.display
 go
+
+
