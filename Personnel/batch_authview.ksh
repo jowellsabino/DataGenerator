@@ -29,6 +29,11 @@ printf "\nCommands to pass to AuthView:\n"
 printf "$COMMAND_STRING"
 printf "\nLength = ${#COMMAND_STRING}\n"
 
+# Ask for user confirmation
+read -p "Proceed (Y/N)?"
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+
 #Execute authview in batch mode
 $cer_exe/authview<<!EOF
 $MILL_USERNAME
@@ -38,3 +43,4 @@ $(printf "$COMMAND_STRING")
 exit
 !EOF
 
+fi
