@@ -5,7 +5,12 @@ COMMON_PASSWORD='Password2255'
 COMMON_RESTRICTION="PasswordLocked,NoLogFailIDisuser,NoPasswordExpire,-PasswordExpired"
 MILL_DOMAIN=$environment # Is there another way to get the domain?
 
-
+# CSV file properties
+# Header rows to delete, usually START_DEL < END_DEL 
+# To avoid deleting any row, set START_DELi > END_DEL
+# Ok to set START_DEL = END_DEL to remove only one row. 
+START_DEL=1
+END_DEL=2
 # Column in CSV file where username is found
 USERNAME_COL=3
 
@@ -25,7 +30,7 @@ function ask_yes_or_no() {
 read -p "CSV filename: " INPUT_CSV
 
 # Remove the first two lines of the csv file
-usernames=($(sed '1,2d' $INPUT_CSV | cut -d ',' -f$USERNAME_COL ))
+usernames=($(sed "${START_DEL},${END_DEL}d" $INPUT_CSV | cut -d ',' -f$USERNAME_COL ))
 echo "Number of usernames: ${#usernames[@]}"
 
 # Null usernames are not added to array, so no need to do a null check
