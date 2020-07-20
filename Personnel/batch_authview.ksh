@@ -5,6 +5,10 @@ COMMON_PASSWORD='Password2255'
 COMMON_RESTRICTION="PasswordLocked,NoLogFailIDisuser,NoPasswordExpire,-PasswordExpired"
 MILL_DOMAIN=$environment # Is there another way to get the domain?
 
+
+# Column in CSV file where username is found
+USERNAME_COL=3
+
 # Functions
 # See: https://stackoverflow.com/questions/1885525/how-do-i-prompt-a-user-for-confirmation-in-bash-script
 function ask_yes_or_no() {
@@ -17,9 +21,21 @@ function ask_yes_or_no() {
 
 
 # Get generic usernames and put in array
-# Query, or use csv as input?
-# for now, fill array manually
-usernames=('DGMD1' 'DGMD2')
+# Prompt for CSV file
+read -p "CSV filename: " INPUT_CSV
+
+# Remove the first two lines of the csv file
+usernames=($(sed '1,2d' $INPUT_CSV | cut -d ',' -f$USERNAME_COL ))
+echo "Number of usernames: ${#usernames[@]}"
+
+# Null usernames are not added to array, so no need to do a null check
+for username in "${usernames[@]}"
+do
+#if [ -n $username ];
+#then
+    printf "$username\n" 
+#fi
+done
 
 # Form the string that would be passed on to authview
 # see https://www.shell-tips.com/bash/arrays/
