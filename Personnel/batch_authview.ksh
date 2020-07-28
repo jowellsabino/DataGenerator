@@ -29,6 +29,9 @@ function ask_yes_or_no() {
 # Prompt for CSV file
 read -p "CSV filename: " INPUT_CSV
 
+# Get common password for the users in the csv file
+read -p "Common password: " COMMON_PASSWORD
+
 # Remove the first two lines of the csv file
 usernames=($(sed "${START_DEL},${END_DEL}d" $INPUT_CSV | cut -d ',' -f$USERNAME_COL ))
 echo "Number of usernames: ${#usernames[@]}"
