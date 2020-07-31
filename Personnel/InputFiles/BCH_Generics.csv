@@ -69,3 +69,5 @@ PHARMMGR,CHB_EPDS,PHARMMGR,BCHDG,PharmNetPharmacyDBC,,,,,PharmNet: Pharmacist DB
 PHLEBOTOMIST,CHB_EPDS,PHLEBOTOMIST,BCHDG,Phlebotomist,,,,,Phlebotomist,,12/31/2100,,,,,,,,,,PRSNLID,PHLEBOTOMIST,CHB_Badge_Number,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SECURITY,ALL ORGS,,,,,,,,,
 SCHEDORTHO,CHB_EPDS,SCHEDORTHO,BCHDG,SchedulerOrtho,,,,,CHB3 SN Scheduler Ortho,,12/31/2100,,,,,,,,,,PRSNLID,SCHEDORTHO,CHB_Badge_Number,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SECURITY,ALL ORGS,,,,,,,,,
 SCHEDDENTAL,CHB_EPDS,SCHEDDENTAL,BCHDG,SchedulerDental,,,,,CHB3 SN Scheduler Dental,,12/31/2100,,,,,,,,,,PRSNLID,SCHEDDENTAL,CHB_Badge_Number,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SECURITY,ALL ORGS,,,,,,,,,
+GENERIC1,CHB_EPDS,GENERIC1,BCHDG,Generic,One,,,,CHB2 Clinical Nutrition Specialist,,12/31/2100,,,,,,,,,,PRSNLID,GENERIC1,CHB_Badge_Number,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SECURITY,ALL ORGS,,,,,,,,,
+GENERIC2,CHB_EPDS,GENERIC1,BCHDG,Generic,Two,,,,CHB2 Student Nurse,,12/31/2100,,,,,,,,,,PRSNLID,GENERIC2,CHB_Badge_Number,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SECURITY,ALL ORGS,,,,,,,,,
