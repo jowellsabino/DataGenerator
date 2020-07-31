@@ -67,3 +67,5 @@ PHARMACISTMLP,CHB_EPDS,PHARMACISTMLP,BCHDG,PharmNetPharmacistMLP,,,,PharmD,Pharm
 PHARMTECH,CHB_EPDS,PHARMTECH,BCHDG,PharmNetPharmacyTechnician,,,,,PharmNet: Pharmacy Technician,,12/31/2100,,,,,,,,,,PRSNLID,PHARMTECH,CHB_Badge_Number,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SECURITY,ALL ORGS,,,,,,,,,
 PHARMMGR,CHB_EPDS,PHARMMGR,BCHDG,PharmNetPharmacyDBC,,,,,PharmNet: Pharmacist DBC,,12/31/2100,,,,,,,,,,PRSNLID,PHARMDBC,CHB_Badge_Number,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SECURITY,ALL ORGS,,,,,,,,,
 PHLEBOTOMIST,CHB_EPDS,PHLEBOTOMIST,BCHDG,Phlebotomist,,,,,Phlebotomist,,12/31/2100,,,,,,,,,,PRSNLID,PHLEBOTOMIST,CHB_Badge_Number,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SECURITY,ALL ORGS,,,,,,,,,
+SCHEDORTHO,CHB_EPDS,SCHEDORTHO,BCHDG,SchedulerOrtho,,,,,CHB3 SN Scheduler Ortho,,12/31/2100,,,,,,,,,,PRSNLID,SCHEDORTHO,CHB_Badge_Number,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SECURITY,ALL ORGS,,,,,,,,,
+SCHEDDENTAL,CHB_EPDS,SCHEDDENTAL,BCHDG,SchedulerDental,,,,,CHB3 SN Scheduler Dental,,12/31/2100,,,,,,,,,,PRSNLID,SCHEDDENTAL,CHB_Badge_Number,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SECURITY,ALL ORGS,,,,,,,,,
